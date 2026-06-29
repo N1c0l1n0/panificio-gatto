@@ -1,0 +1,70 @@
+{
+  "categories": [
+    {
+      "id": "torte",
+      "name": "Torte e Semifreddi",
+      "items": [
+        {
+          "id": "torta_margherita",
+          "name": "Torta Margherita con Ciambelle",
+          "image": "images/torta_compleanno_margherita.jpg",
+          "description": "Deliziosa torta di compleanno decorata con ciambelle glassate e farfalle."
+        },
+        {
+          "id": "torta_80_anni",
+          "name": "Torta Compleanno 80 Anni",
+          "image": "images/torta_compleanno_80.jpg",
+          "description": "Elegante torta con decorazioni floreali gialle in panna per celebrare un traguardo speciale."
+        },
+        {
+          "id": "torta_laurea",
+          "name": "Torta Congratulazioni Dottoressa",
+          "image": "images/torta_laurea.jpg",
+          "description": "Torta celebrativa per laurea con scritta personalizzata in cioccolato e fragola centrale."
+        }
+      ]
+    },
+    {
+      "id": "pasticceria",
+      "name": "Pasticceria Fresca e Secca",
+      "items": [
+        {
+          "id": "pasticcini_halloween",
+          "name": "Pasticcini di Halloween",
+          "image": "images/pasticcini_halloween.jpg",
+          "description": "Simpatici pasticcini a tema Halloween a forma di bare e dita."
+        },
+        {
+          "id": "crostata_decorata",
+          "name": "Crostata Decorata",
+          "image": "images/crostata_decorata.jpg",
+          "description": "Crostata artigianale decorata a forma di personaggio (ispirata ad Harry Potter) con confetture assortite."
+        }
+      ]
+    },
+    {
+      "id": "biscotti",
+      "name": "Biscotti Personalizzati",
+      "items": [
+        {
+          "id": "biscotti_nascita",
+          "name": "Biscotti Baby Shower",
+          "image": "images/biscotti_nascita.jpg",
+          "description": "Biscotti in pasta frolla a forma di cuore decorati con ghiaccia reale per festeggiare nascite e baby shower."
+        }
+      ]
+    },
+    {
+      "id": "salato",
+      "name": "Focacce e Salati",
+      "items": [
+        {
+          "id": "focaccia_rosmarino",
+          "name": "Focaccia al Rosmarino",
+          "image": "images/focaccia_rosmarino.jpg",
+          "description": "Soffice focaccia artigianale cotta al forno con olio extravergine d'oliva e rosmarino fresco."
+        }
+      ]
+    }
+  ]
+}
