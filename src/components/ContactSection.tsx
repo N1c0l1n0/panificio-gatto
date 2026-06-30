@@ -27,12 +27,22 @@ export default function ContactSection() {
               <div className="bg-bakery-gold/20 p-3 rounded-full text-bakery-accent shrink-0">
                 <Clock className="w-6 h-6" />
               </div>
-              <div>
-                <h3 className="font-serif font-bold text-xl text-bakery-dark mb-1">Orari di Apertura</h3>
-                <p className="text-bakery-dark/80">
-                  Dal Lunedì al Sabato<br />
-                  <span className="font-medium text-bakery-accent">Apertura alle 06:30</span> - Il profumo del pane fresco ti aspetta fin dal primo mattino!
-                </p>
+              <div className="flex-1">
+                <h3 className="font-serif font-bold text-xl text-bakery-dark mb-3">Orari di Apertura</h3>
+                <ul className="text-bakery-dark/80 space-y-2 text-sm sm:text-base">
+                  <li className="flex justify-between border-b border-bakery-gold/10 pb-1">
+                    <span className="font-medium">Lunedì e Sabato</span>
+                    <span>06:30 - 13:00</span>
+                  </li>
+                  <li className="flex justify-between border-b border-bakery-gold/10 pb-1">
+                    <span className="font-medium">Martedì - Venerdì</span>
+                    <span className="text-right">06:30 - 13:00<br/>16:00 - 19:00</span>
+                  </li>
+                  <li className="flex justify-between pb-1 text-bakery-accent/80">
+                    <span className="font-medium">Domenica</span>
+                    <span>Chiuso</span>
+                  </li>
+                </ul>
               </div>
             </div>
 
