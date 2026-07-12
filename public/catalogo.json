@@ -1,6 +1,271 @@
 {
   "categories": [
     {
+      "id": "pane_focacce",
+      "name": "Pizze e Focacce",
+      "items": [
+        {
+          "id": "pane_focacce_10",
+          "name": "Pane e Focacce 11",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.58 (1).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_11",
+          "name": "Pane e Focacce 12",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.58.jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_12",
+          "name": "Pane e Focacce 13",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (1).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_13",
+          "name": "Pane e Focacce 14",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (2).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_14",
+          "name": "Pane e Focacce 15",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (3).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_15",
+          "name": "Pane e Focacce 16",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59.jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_16",
+          "name": "Pane e Focacce 17",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (1).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_17",
+          "name": "Pane e Focacce 18",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (2).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_18",
+          "name": "Pane e Focacce 19",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (3).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_19",
+          "name": "Pane e Focacce 20",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01.jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_20",
+          "name": "Pane e Focacce 21",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.56 (1).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_21",
+          "name": "Pane e Focacce 22",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.56.jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_22",
+          "name": "Pane e Focacce 23",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.58 (1).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_23",
+          "name": "Pane e Focacce 24",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.58.jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_24",
+          "name": "Pane e Focacce 25",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.37.jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_25",
+          "name": "Pane e Focacce 26",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (1).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_26",
+          "name": "Pane e Focacce 27",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (2).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_27",
+          "name": "Pane e Focacce 28",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (3).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_28",
+          "name": "Pane e Focacce 29",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (4).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_29",
+          "name": "Pane e Focacce 30",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38.jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_30",
+          "name": "Pane e Focacce 31",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.20.jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_31",
+          "name": "Pane e Focacce 32",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.21.jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_32",
+          "name": "Pane e Focacce 33",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (1).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_33",
+          "name": "Pane e Focacce 34",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (2).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_34",
+          "name": "Pane e Focacce 35",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (3).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_35",
+          "name": "Pane e Focacce 36",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (4).jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_36",
+          "name": "Pane e Focacce 37",
+          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23.jpeg",
+          "description": "",
+          "type": "image"
+        },
+        {
+          "id": "pane_focacce_0",
+          "name": "Pane e Focacce 1",
+          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (1).mp4",
+          "description": "",
+          "type": "video"
+        },
+        {
+          "id": "pane_focacce_1",
+          "name": "Pane e Focacce 2",
+          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (2).mp4",
+          "description": "",
+          "type": "video"
+        },
+        {
+          "id": "pane_focacce_2",
+          "name": "Pane e Focacce 3",
+          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (3).mp4",
+          "description": "",
+          "type": "video"
+        },
+        {
+          "id": "pane_focacce_3",
+          "name": "Pane e Focacce 4",
+          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (4).mp4",
+          "description": "",
+          "type": "video"
+        },
+        {
+          "id": "pane_focacce_4",
+          "name": "Pane e Focacce 5",
+          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (5).mp4",
+          "description": "",
+          "type": "video"
+        },
+        {
+          "id": "pane_focacce_5",
+          "name": "Pane e Focacce 6",
+          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (6).mp4",
+          "description": "",
+          "type": "video"
+        },
+        {
+          "id": "pane_focacce_6",
+          "name": "Pane e Focacce 7",
+          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (7).mp4",
+          "description": "",
+          "type": "video"
+        },
+        {
+          "id": "pane_focacce_7",
+          "name": "Pane e Focacce 8",
+          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04.mp4",
+          "description": "",
+          "type": "video"
+        },
+        {
+          "id": "pane_focacce_8",
+          "name": "Pane e Focacce 9",
+          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.58.mp4",
+          "description": "",
+          "type": "video"
+        },
+        {
+          "id": "pane_focacce_9",
+          "name": "Pane e Focacce 10",
+          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.27.23.mp4",
+          "description": "",
+          "type": "video"
+        }
+      ]
+    },
+    {
       "id": "torte",
       "name": "Torte",
       "items": [
@@ -582,271 +847,6 @@
           "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.54.jpeg",
           "description": "",
           "type": "image"
-        }
-      ]
-    },
-    {
-      "id": "pane_focacce",
-      "name": "Pane e Focacce",
-      "items": [
-        {
-          "id": "pane_focacce_10",
-          "name": "Pane e Focacce 11",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.58 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_11",
-          "name": "Pane e Focacce 12",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.58.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_12",
-          "name": "Pane e Focacce 13",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_13",
-          "name": "Pane e Focacce 14",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_14",
-          "name": "Pane e Focacce 15",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_15",
-          "name": "Pane e Focacce 16",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_16",
-          "name": "Pane e Focacce 17",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_17",
-          "name": "Pane e Focacce 18",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_18",
-          "name": "Pane e Focacce 19",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_19",
-          "name": "Pane e Focacce 20",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_20",
-          "name": "Pane e Focacce 21",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.56 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_21",
-          "name": "Pane e Focacce 22",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.56.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_22",
-          "name": "Pane e Focacce 23",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.58 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_23",
-          "name": "Pane e Focacce 24",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.58.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_24",
-          "name": "Pane e Focacce 25",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.37.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_25",
-          "name": "Pane e Focacce 26",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_26",
-          "name": "Pane e Focacce 27",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_27",
-          "name": "Pane e Focacce 28",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_28",
-          "name": "Pane e Focacce 29",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (4).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_29",
-          "name": "Pane e Focacce 30",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_30",
-          "name": "Pane e Focacce 31",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.20.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_31",
-          "name": "Pane e Focacce 32",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.21.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_32",
-          "name": "Pane e Focacce 33",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_33",
-          "name": "Pane e Focacce 34",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_34",
-          "name": "Pane e Focacce 35",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_35",
-          "name": "Pane e Focacce 36",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (4).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_36",
-          "name": "Pane e Focacce 37",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_0",
-          "name": "Pane e Focacce 1",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (1).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_1",
-          "name": "Pane e Focacce 2",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (2).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_2",
-          "name": "Pane e Focacce 3",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (3).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_3",
-          "name": "Pane e Focacce 4",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (4).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_4",
-          "name": "Pane e Focacce 5",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (5).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_5",
-          "name": "Pane e Focacce 6",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (6).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_6",
-          "name": "Pane e Focacce 7",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (7).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_7",
-          "name": "Pane e Focacce 8",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04.mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_8",
-          "name": "Pane e Focacce 9",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.58.mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_9",
-          "name": "Pane e Focacce 10",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.27.23.mp4",
-          "description": "",
-          "type": "video"
         }
       ]
     }

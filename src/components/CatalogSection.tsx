@@ -60,15 +60,20 @@ export default function CatalogSection() {
         ) : (
           <div className="space-y-12">
             {/* Category tabs */}
-            <div className="flex overflow-x-auto pb-4 gap-4 scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
+            <div className="text-center mb-6">
+              <p className="text-bakery-accent font-medium inline-block bg-white px-5 py-2 rounded-full shadow-sm border border-bakery-gold/30 animate-pulse text-sm md:text-base">
+                👇 Clicca su una categoria per vedere i prodotti
+              </p>
+            </div>
+            <div className="flex overflow-x-auto pt-4 pb-6 gap-4 scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-4">
               {categories.map((category) => (
                 <button
                   key={category.id}
                   onClick={() => setActiveCategoryId(activeCategoryId === category.id ? null : category.id)}
-                  className={`whitespace-nowrap px-6 py-3 rounded-full font-serif font-semibold transition-all duration-300 ${
+                  className={`whitespace-nowrap px-6 py-3 rounded-full font-serif font-semibold transition-all duration-300 transform active:scale-95 cursor-pointer ${
                     activeCategoryId === category.id
-                      ? 'bg-bakery-gold text-white shadow-md'
-                      : 'bg-white text-bakery-dark border border-bakery-gold/20 hover:border-bakery-gold/60'
+                      ? 'bg-bakery-gold text-white shadow-lg scale-105 ring-2 ring-bakery-gold ring-offset-2'
+                      : 'bg-white text-bakery-dark border-2 border-bakery-gold/30 hover:border-bakery-gold hover:text-bakery-accent hover:shadow-md hover:-translate-y-1'
                   }`}
                 >
                   {category.name}
@@ -82,7 +87,7 @@ export default function CatalogSection() {
                 <h3 className="text-2xl font-serif font-bold text-bakery-accent mb-8 border-b border-bakery-gold/20 pb-2">
                   {activeCategory.name}
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
                   {activeCategory.items.map((item) => (
                     <div 
                       key={item.id} 
@@ -171,8 +176,9 @@ export default function CatalogSection() {
               <video 
                 src={selectedMedia.url} 
                 className="max-w-full max-h-full rounded-md shadow-2xl"
-                controls 
                 autoPlay 
+                muted
+                loop
                 playsInline
               />
             ) : (

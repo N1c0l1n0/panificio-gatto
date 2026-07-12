@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Euro } from 'lucide-react';
+import { MapPin, Phone, Clock } from 'lucide-react';
 
 export default function ContactSection() {
   return (
@@ -58,16 +58,6 @@ export default function ContactSection() {
               </div>
             </div>
             
-            <div className="flex items-start gap-4">
-              <div className="bg-bakery-gold/20 p-3 rounded-full text-bakery-accent shrink-0">
-                <Euro className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-serif font-bold text-xl text-bakery-dark mb-1">Prezzi</h3>
-                <p className="text-bakery-dark/80">Accessibile, per tutti i giorni (1-10 € a persona)</p>
-              </div>
-            </div>
-
           </div>
 
           {/* Map Placeholder */}
