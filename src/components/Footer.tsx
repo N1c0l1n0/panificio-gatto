@@ -1,4 +1,4 @@
-import { Croissant } from 'lucide-react';
+// Removed Croissant import
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
           
           <div className="flex flex-col items-center md:items-start space-y-4">
             <div className="flex items-center gap-2">
-              <Croissant className="text-bakery-gold h-8 w-8" />
+              <img src="/images/LogoPanificioGatto.jpg" alt="Logo Panificio Gatto" className="h-14 w-auto rounded-full object-cover" />
               <span className="font-serif text-2xl font-bold">Panificio Gatto</span>
             </div>
             <p className="text-bakery-light/70 text-sm text-center md:text-left max-w-xs">

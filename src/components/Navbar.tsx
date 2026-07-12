@@ -1,4 +1,4 @@
-import { Menu, X, Croissant } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center gap-2">
-            <Croissant className="text-bakery-gold h-8 w-8" />
+            <img src="/images/LogoPanificioGatto.jpg" alt="Logo Panificio Gatto" className="h-16 w-auto rounded-full object-cover" />
             <span className="font-serif text-2xl font-bold text-bakery-dark">Panificio Gatto</span>
           </div>
           
