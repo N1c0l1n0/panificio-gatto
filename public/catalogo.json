@@ -1,559 +1,305 @@
 {
   "categories": [
     {
-      "id": "pane_focacce",
-      "name": "Pizze e Focacce",
-      "items": [
+      "id": "pane",
+      "name": "Pane",
+      "subcategories": [
         {
-          "id": "pane_focacce_10",
-          "name": "Pane e Focacce 11",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.58 (1).jpeg",
-          "description": "",
-          "type": "image"
+          "id": "pane_speciale",
+          "name": "Pane speciale",
+          "items": []
         },
         {
-          "id": "pane_focacce_11",
-          "name": "Pane e Focacce 12",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.58.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_12",
-          "name": "Pane e Focacce 13",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_13",
-          "name": "Pane e Focacce 14",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_14",
-          "name": "Pane e Focacce 15",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_15",
-          "name": "Pane e Focacce 16",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_16",
-          "name": "Pane e Focacce 17",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_17",
-          "name": "Pane e Focacce 18",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_18",
-          "name": "Pane e Focacce 19",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_19",
-          "name": "Pane e Focacce 20",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_20",
-          "name": "Pane e Focacce 21",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.56 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_21",
-          "name": "Pane e Focacce 22",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.56.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_22",
-          "name": "Pane e Focacce 23",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.58 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_23",
-          "name": "Pane e Focacce 24",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.58.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_24",
-          "name": "Pane e Focacce 25",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.37.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_25",
-          "name": "Pane e Focacce 26",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_26",
-          "name": "Pane e Focacce 27",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_27",
-          "name": "Pane e Focacce 28",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_28",
-          "name": "Pane e Focacce 29",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (4).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_29",
-          "name": "Pane e Focacce 30",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_30",
-          "name": "Pane e Focacce 31",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.20.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_31",
-          "name": "Pane e Focacce 32",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.21.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_32",
-          "name": "Pane e Focacce 33",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_33",
-          "name": "Pane e Focacce 34",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_34",
-          "name": "Pane e Focacce 35",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_35",
-          "name": "Pane e Focacce 36",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (4).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_36",
-          "name": "Pane e Focacce 37",
-          "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "pane_focacce_0",
-          "name": "Pane e Focacce 1",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (1).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_1",
-          "name": "Pane e Focacce 2",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (2).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_2",
-          "name": "Pane e Focacce 3",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (3).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_3",
-          "name": "Pane e Focacce 4",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (4).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_4",
-          "name": "Pane e Focacce 5",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (5).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_5",
-          "name": "Pane e Focacce 6",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (6).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_6",
-          "name": "Pane e Focacce 7",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (7).mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_7",
-          "name": "Pane e Focacce 8",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04.mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_8",
-          "name": "Pane e Focacce 9",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.58.mp4",
-          "description": "",
-          "type": "video"
-        },
-        {
-          "id": "pane_focacce_9",
-          "name": "Pane e Focacce 10",
-          "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.27.23.mp4",
-          "description": "",
-          "type": "video"
+          "id": "pane_bianco",
+          "name": "Pane \"bianco\"",
+          "items": []
         }
       ]
     },
     {
-      "id": "torte",
-      "name": "Torte",
-      "items": [
+      "id": "forno",
+      "name": "Prodotti da forno",
+      "subcategories": [
         {
-          "id": "torte_0",
-          "name": "Torte 1",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (1).jpeg",
-          "description": "",
-          "type": "image"
+          "id": "pizze_focacce",
+          "name": "Pizze e Focacce",
+          "items": [
+            {
+              "id": "pane_focacce_10",
+              "name": "Pane e Focacce 11",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.58 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_11",
+              "name": "Pane e Focacce 12",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.58.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_12",
+              "name": "Pane e Focacce 13",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_13",
+              "name": "Pane e Focacce 14",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_14",
+              "name": "Pane e Focacce 15",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_15",
+              "name": "Pane e Focacce 16",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.17.59.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_16",
+              "name": "Pane e Focacce 17",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_17",
+              "name": "Pane e Focacce 18",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_18",
+              "name": "Pane e Focacce 19",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_19",
+              "name": "Pane e Focacce 20",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.01.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_20",
+              "name": "Pane e Focacce 21",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.56 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_21",
+              "name": "Pane e Focacce 22",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.56.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_22",
+              "name": "Pane e Focacce 23",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.58 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_23",
+              "name": "Pane e Focacce 24",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.24.58.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_24",
+              "name": "Pane e Focacce 25",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.37.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_25",
+              "name": "Pane e Focacce 26",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_26",
+              "name": "Pane e Focacce 27",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_27",
+              "name": "Pane e Focacce 28",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_28",
+              "name": "Pane e Focacce 29",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38 (4).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_29",
+              "name": "Pane e Focacce 30",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.25.38.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_30",
+              "name": "Pane e Focacce 31",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.20.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_31",
+              "name": "Pane e Focacce 32",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.21.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_32",
+              "name": "Pane e Focacce 33",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_33",
+              "name": "Pane e Focacce 34",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_34",
+              "name": "Pane e Focacce 35",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_35",
+              "name": "Pane e Focacce 36",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23 (4).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_36",
+              "name": "Pane e Focacce 37",
+              "image": "images/Pane e Focacce/WhatsApp Image 2026-07-12 at 11.27.23.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "pane_focacce_0",
+              "name": "Pane e Focacce 1",
+              "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (1).mp4",
+              "description": "",
+              "type": "video"
+            },
+            {
+              "id": "pane_focacce_1",
+              "name": "Pane e Focacce 2",
+              "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (2).mp4",
+              "description": "",
+              "type": "video"
+            },
+            {
+              "id": "pane_focacce_2",
+              "name": "Pane e Focacce 3",
+              "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (3).mp4",
+              "description": "",
+              "type": "video"
+            },
+            {
+              "id": "pane_focacce_3",
+              "name": "Pane e Focacce 4",
+              "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (4).mp4",
+              "description": "",
+              "type": "video"
+            },
+            {
+              "id": "pane_focacce_4",
+              "name": "Pane e Focacce 5",
+              "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (5).mp4",
+              "description": "",
+              "type": "video"
+            },
+            {
+              "id": "pane_focacce_5",
+              "name": "Pane e Focacce 6",
+              "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (6).mp4",
+              "description": "",
+              "type": "video"
+            },
+            {
+              "id": "pane_focacce_6",
+              "name": "Pane e Focacce 7",
+              "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04 (7).mp4",
+              "description": "",
+              "type": "video"
+            },
+            {
+              "id": "pane_focacce_7",
+              "name": "Pane e Focacce 8",
+              "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.04.mp4",
+              "description": "",
+              "type": "video"
+            },
+            {
+              "id": "pane_focacce_8",
+              "name": "Pane e Focacce 9",
+              "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.24.58.mp4",
+              "description": "",
+              "type": "video"
+            },
+            {
+              "id": "pane_focacce_9",
+              "name": "Pane e Focacce 10",
+              "image": "images/Pane e Focacce/Video Pane e Focacce/WhatsApp Video 2026-07-12 at 11.27.23.mp4",
+              "description": "",
+              "type": "video"
+            }
+          ]
         },
         {
-          "id": "torte_1",
-          "name": "Torte 2",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (2).jpeg",
-          "description": "",
-          "type": "image"
+          "id": "pasticceria_salata",
+          "name": "Pasticceria salata",
+          "items": []
         },
         {
-          "id": "torte_2",
-          "name": "Torte 3",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_3",
-          "name": "Torte 4",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (4).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_4",
-          "name": "Torte 5",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (5).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_5",
-          "name": "Torte 6",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (6).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_6",
-          "name": "Torte 7",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (7).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_7",
-          "name": "Torte 8",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_8",
-          "name": "Torte 9",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_9",
-          "name": "Torte 10",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_10",
-          "name": "Torte 11",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_11",
-          "name": "Torte 12",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (4).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_12",
-          "name": "Torte 13",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (5).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_13",
-          "name": "Torte 14",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (6).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_14",
-          "name": "Torte 15",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (7).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_15",
-          "name": "Torte 16",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (8).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_16",
-          "name": "Torte 17",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_17",
-          "name": "Torte 18",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_18",
-          "name": "Torte 19",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_19",
-          "name": "Torte 20",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_20",
-          "name": "Torte 21",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (4).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_21",
-          "name": "Torte 22",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (5).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_22",
-          "name": "Torte 23",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (6).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_23",
-          "name": "Torte 24",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (7).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_24",
-          "name": "Torte 25",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (8).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_25",
-          "name": "Torte 26",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_26",
-          "name": "Torte 27",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_27",
-          "name": "Torte 28",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_28",
-          "name": "Torte 29",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_29",
-          "name": "Torte 30",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (4).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_30",
-          "name": "Torte 31",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (5).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_31",
-          "name": "Torte 32",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (6).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_32",
-          "name": "Torte 33",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (7).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_33",
-          "name": "Torte 34",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_34",
-          "name": "Torte 35",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_35",
-          "name": "Torte 36",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_36",
-          "name": "Torte 37",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_37",
-          "name": "Torte 38",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15 (4) 2.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_38",
-          "name": "Torte 39",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15 (5).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "torte_39",
-          "name": "Torte 40",
-          "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15.jpeg",
-          "description": "",
-          "type": "image"
+          "id": "prodotti_salati",
+          "name": "I nostri prodotti salati",
+          "items": []
         }
       ]
     },
     {
       "id": "pane_nutella",
-      "name": "Pane e nutella",
+      "name": "Pane e nutella personalizzati",
       "items": [
         {
           "id": "pane_nutella_0",
@@ -677,176 +423,478 @@
       ]
     },
     {
-      "id": "biscotti_personalizzati",
-      "name": "Biscotti Personalizzati",
-      "items": [
+      "id": "pasticceria",
+      "name": "Pasticceria",
+      "subcategories": [
         {
-          "id": "biscotti_personalizzati_0",
-          "name": "Biscotti Personalizzati 1",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.51 (1).jpeg",
-          "description": "",
-          "type": "image"
+          "id": "pasticceria_stagionale",
+          "name": "Pasticceria stagionale",
+          "items": []
         },
         {
-          "id": "biscotti_personalizzati_1",
-          "name": "Biscotti Personalizzati 2",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.51 (2).jpeg",
-          "description": "",
-          "type": "image"
+          "id": "biscotteria",
+          "name": "Biscotteria",
+          "items": []
         },
         {
-          "id": "biscotti_personalizzati_2",
-          "name": "Biscotti Personalizzati 3",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.51 (3).jpeg",
-          "description": "",
-          "type": "image"
+          "id": "torte",
+          "name": "Torte",
+          "items": [
+            {
+              "id": "torte_0",
+              "name": "Torte 1",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_1",
+              "name": "Torte 2",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_2",
+              "name": "Torte 3",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_3",
+              "name": "Torte 4",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (4).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_4",
+              "name": "Torte 5",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (5).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_5",
+              "name": "Torte 6",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (6).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_6",
+              "name": "Torte 7",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11 (7).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_7",
+              "name": "Torte 8",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.11.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_8",
+              "name": "Torte 9",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_9",
+              "name": "Torte 10",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_10",
+              "name": "Torte 11",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_11",
+              "name": "Torte 12",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (4).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_12",
+              "name": "Torte 13",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (5).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_13",
+              "name": "Torte 14",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (6).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_14",
+              "name": "Torte 15",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (7).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_15",
+              "name": "Torte 16",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12 (8).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_16",
+              "name": "Torte 17",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.12.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_17",
+              "name": "Torte 18",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_18",
+              "name": "Torte 19",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_19",
+              "name": "Torte 20",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_20",
+              "name": "Torte 21",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (4).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_21",
+              "name": "Torte 22",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (5).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_22",
+              "name": "Torte 23",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (6).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_23",
+              "name": "Torte 24",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (7).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_24",
+              "name": "Torte 25",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13 (8).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_25",
+              "name": "Torte 26",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.13.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_26",
+              "name": "Torte 27",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_27",
+              "name": "Torte 28",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_28",
+              "name": "Torte 29",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_29",
+              "name": "Torte 30",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (4).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_30",
+              "name": "Torte 31",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (5).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_31",
+              "name": "Torte 32",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (6).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_32",
+              "name": "Torte 33",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14 (7).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_33",
+              "name": "Torte 34",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.14.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_34",
+              "name": "Torte 35",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_35",
+              "name": "Torte 36",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_36",
+              "name": "Torte 37",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_37",
+              "name": "Torte 38",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15 (4) 2.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_38",
+              "name": "Torte 39",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15 (5).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "torte_39",
+              "name": "Torte 40",
+              "image": "images/Torte/WhatsApp Image 2026-07-12 at 11.08.15.jpeg",
+              "description": "",
+              "type": "image"
+            }
+          ]
         },
         {
-          "id": "biscotti_personalizzati_3",
-          "name": "Biscotti Personalizzati 4",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.51.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_4",
-          "name": "Biscotti Personalizzati 5",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_5",
-          "name": "Biscotti Personalizzati 6",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_6",
-          "name": "Biscotti Personalizzati 7",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_7",
-          "name": "Biscotti Personalizzati 8",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (4).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_8",
-          "name": "Biscotti Personalizzati 9",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (5).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_9",
-          "name": "Biscotti Personalizzati 10",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (6).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_10",
-          "name": "Biscotti Personalizzati 11",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (7).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_11",
-          "name": "Biscotti Personalizzati 12",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_12",
-          "name": "Biscotti Personalizzati 13",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_13",
-          "name": "Biscotti Personalizzati 14",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (2).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_14",
-          "name": "Biscotti Personalizzati 15",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (3).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_15",
-          "name": "Biscotti Personalizzati 16",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (4).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_16",
-          "name": "Biscotti Personalizzati 17",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (5).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_17",
-          "name": "Biscotti Personalizzati 18",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (6).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_18",
-          "name": "Biscotti Personalizzati 19",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (7).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_19",
-          "name": "Biscotti Personalizzati 20",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (8).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_20",
-          "name": "Biscotti Personalizzati 21",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (9).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_21",
-          "name": "Biscotti Personalizzati 22",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53.jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_22",
-          "name": "Biscotti Personalizzati 23",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.54 (1).jpeg",
-          "description": "",
-          "type": "image"
-        },
-        {
-          "id": "biscotti_personalizzati_23",
-          "name": "Biscotti Personalizzati 24",
-          "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.54.jpeg",
-          "description": "",
-          "type": "image"
+          "id": "personalizzati",
+          "name": "Personalizzati",
+          "items": [
+            {
+              "id": "biscotti_personalizzati_0",
+              "name": "Biscotti Personalizzati 1",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.51 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_1",
+              "name": "Biscotti Personalizzati 2",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.51 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_2",
+              "name": "Biscotti Personalizzati 3",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.51 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_3",
+              "name": "Biscotti Personalizzati 4",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.51.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_4",
+              "name": "Biscotti Personalizzati 5",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_5",
+              "name": "Biscotti Personalizzati 6",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_6",
+              "name": "Biscotti Personalizzati 7",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_7",
+              "name": "Biscotti Personalizzati 8",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (4).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_8",
+              "name": "Biscotti Personalizzati 9",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (5).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_9",
+              "name": "Biscotti Personalizzati 10",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (6).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_10",
+              "name": "Biscotti Personalizzati 11",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52 (7).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_11",
+              "name": "Biscotti Personalizzati 12",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.52.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_12",
+              "name": "Biscotti Personalizzati 13",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_13",
+              "name": "Biscotti Personalizzati 14",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (2).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_14",
+              "name": "Biscotti Personalizzati 15",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (3).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_15",
+              "name": "Biscotti Personalizzati 16",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (4).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_16",
+              "name": "Biscotti Personalizzati 17",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (5).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_17",
+              "name": "Biscotti Personalizzati 18",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (6).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_18",
+              "name": "Biscotti Personalizzati 19",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (7).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_19",
+              "name": "Biscotti Personalizzati 20",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (8).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_20",
+              "name": "Biscotti Personalizzati 21",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53 (9).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_21",
+              "name": "Biscotti Personalizzati 22",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.53.jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_22",
+              "name": "Biscotti Personalizzati 23",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.54 (1).jpeg",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotti_personalizzati_23",
+              "name": "Biscotti Personalizzati 24",
+              "image": "images/Biscotti personalizzati/WhatsApp Image 2026-07-12 at 11.15.54.jpeg",
+              "description": "",
+              "type": "image"
+            }
+          ]
         }
       ]
     }

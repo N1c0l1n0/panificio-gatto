@@ -9,15 +9,23 @@ type CatalogItem = {
   type?: 'image' | 'video';
 };
 
-type CatalogCategory = {
+type CatalogSubcategory = {
   id: string;
   name: string;
   items: CatalogItem[];
 };
 
+type CatalogCategory = {
+  id: string;
+  name: string;
+  subcategories?: CatalogSubcategory[];
+  items?: CatalogItem[];
+};
+
 export default function CatalogSection() {
   const [categories, setCategories] = useState<CatalogCategory[]>([]);
   const [activeCategoryId, setActiveCategoryId] = useState<string | null>(null);
+  const [activeSubcategoryId, setActiveSubcategoryId] = useState<string | null>(null);
   const [selectedMedia, setSelectedMedia] = useState<{url: string, type: 'image' | 'video'} | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -35,8 +43,30 @@ export default function CatalogSection() {
       });
   }, []);
 
+  const handleCategoryClick = (id: string) => {
+    if (activeCategoryId === id) {
+      setActiveCategoryId(null);
+      setActiveSubcategoryId(null);
+    } else {
+      setActiveCategoryId(id);
+      const category = categories.find(c => c.id === id);
+      if (category?.subcategories && category.subcategories.length > 0) {
+        setActiveSubcategoryId(category.subcategories[0].id);
+      } else {
+        setActiveSubcategoryId(null);
+      }
+    }
+  };
+
   const activeCategory = categories.find(c => c.id === activeCategoryId);
-  const allImages = categories.flatMap(c => c.items).filter(item => item.type !== 'video').sort(() => Math.random() - 0.5);
+  const activeSubcategory = activeCategory?.subcategories?.find(s => s.id === activeSubcategoryId);
+  const itemsToDisplay = activeSubcategory ? activeSubcategory.items : (activeCategory?.items || []);
+
+  const allImages = categories.flatMap(c => {
+    const items = c.items || [];
+    const subItems = c.subcategories?.flatMap(s => s.items) || [];
+    return [...items, ...subItems];
+  }).filter(item => item.type !== 'video').sort(() => Math.random() - 0.5);
 
   return (
     <section id="specialita" className="py-20 bg-bakery-light">
@@ -65,30 +95,53 @@ export default function CatalogSection() {
                 👇 Clicca su una categoria per vedere i prodotti
               </p>
             </div>
-            <div className="flex overflow-x-auto pt-4 pb-6 gap-4 scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-4">
-              {categories.map((category) => (
-                <button
-                  key={category.id}
-                  onClick={() => setActiveCategoryId(activeCategoryId === category.id ? null : category.id)}
-                  className={`whitespace-nowrap px-6 py-3 rounded-full font-serif font-semibold transition-all duration-300 transform active:scale-95 cursor-pointer ${
-                    activeCategoryId === category.id
-                      ? 'bg-bakery-gold text-white shadow-lg scale-105 ring-2 ring-bakery-gold ring-offset-2'
-                      : 'bg-white text-bakery-dark border-2 border-bakery-gold/30 hover:border-bakery-gold hover:text-bakery-accent hover:shadow-md hover:-translate-y-1'
-                  }`}
-                >
-                  {category.name}
-                </button>
-              ))}
+            <div className="flex flex-col gap-2">
+              <div className="flex overflow-x-auto pt-4 pb-2 gap-4 scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-4">
+                {categories.map((category) => (
+                  <button
+                    key={category.id}
+                    onClick={() => handleCategoryClick(category.id)}
+                    className={`whitespace-nowrap px-6 py-3 rounded-full font-serif font-semibold transition-all duration-300 transform active:scale-95 cursor-pointer ${
+                      activeCategoryId === category.id
+                        ? 'bg-bakery-gold text-white shadow-lg scale-105 ring-2 ring-bakery-gold ring-offset-2'
+                        : 'bg-white text-bakery-dark border-2 border-bakery-gold/30 hover:border-bakery-gold hover:text-bakery-accent hover:shadow-md hover:-translate-y-1'
+                    }`}
+                  >
+                    {category.name}
+                  </button>
+                ))}
+              </div>
+              
+              {activeCategory?.subcategories && activeCategory.subcategories.length > 0 && (
+                <div className="flex overflow-x-auto pb-6 pt-2 gap-3 scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-4 animate-in fade-in slide-in-from-top-2 duration-300">
+                  {activeCategory.subcategories.map((sub) => (
+                    <button
+                      key={sub.id}
+                      onClick={() => setActiveSubcategoryId(sub.id)}
+                      className={`whitespace-nowrap px-4 py-2 text-sm rounded-full font-medium transition-all duration-200 cursor-pointer ${
+                        activeSubcategoryId === sub.id
+                          ? 'bg-bakery-accent text-white shadow-md'
+                          : 'bg-bakery-light/80 text-bakery-dark/80 border border-bakery-gold/20 hover:bg-white hover:text-bakery-accent'
+                      }`}
+                    >
+                      {sub.name}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Active category items */}
             {activeCategory ? (
-              <div>
-                <h3 className="text-2xl font-serif font-bold text-bakery-accent mb-8 border-b border-bakery-gold/20 pb-2">
-                  {activeCategory.name}
+              <div className="animate-in fade-in duration-500">
+                <h3 className="text-2xl font-serif font-bold text-bakery-accent mb-8 border-b border-bakery-gold/20 pb-2 flex flex-col sm:flex-row sm:items-baseline gap-2">
+                  <span>{activeCategory.name}</span>
+                  {activeSubcategory && (
+                    <span className="text-lg text-bakery-dark/60 font-sans font-normal">/ {activeSubcategory.name}</span>
+                  )}
                 </h3>
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
-                  {activeCategory.items.map((item) => (
+                  {itemsToDisplay.map((item) => (
                     <div 
                       key={item.id} 
                       className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-bakery-gold/10 group cursor-pointer relative"
@@ -123,7 +176,7 @@ export default function CatalogSection() {
                       </div>
                     </div>
                   ))}
-                  {activeCategory.items.length === 0 && (
+                  {itemsToDisplay.length === 0 && (
                     <div className="col-span-full text-center py-10 text-bakery-dark/60">
                       Nessun prodotto presente in questa categoria.
                     </div>

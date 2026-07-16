@@ -16,6 +16,7 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-8">
             <a href="#home" className="text-bakery-dark hover:text-bakery-accent transition-colors font-medium">Home</a>
             <a href="#specialita" className="text-bakery-dark hover:text-bakery-accent transition-colors font-medium">Specialità</a>
+            <a href="#calendario" className="text-bakery-dark hover:text-bakery-accent transition-colors font-medium">Calendario</a>
             <a href="#dove-siamo" className="text-bakery-dark hover:text-bakery-accent transition-colors font-medium">Dove Siamo</a>
           </div>
 
@@ -33,6 +34,7 @@ export default function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="#home" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-bakery-dark hover:text-bakery-accent font-medium">Home</a>
             <a href="#specialita" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-bakery-dark hover:text-bakery-accent font-medium">Specialità</a>
+            <a href="#calendario" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-bakery-dark hover:text-bakery-accent font-medium">Calendario</a>
             <a href="#dove-siamo" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-bakery-dark hover:text-bakery-accent font-medium">Dove Siamo</a>
           </div>
         </div>

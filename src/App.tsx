@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import CatalogSection from './components/CatalogSection';
+import ScheduleSection from './components/ScheduleSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
@@ -12,6 +13,7 @@ function App() {
       <main className="flex-grow">
         <HeroSection />
         <CatalogSection />
+        <ScheduleSection />
         <ContactSection />
       </main>
 
