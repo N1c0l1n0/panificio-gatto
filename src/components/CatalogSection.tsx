@@ -34,6 +34,7 @@ export default function CatalogSection() {
   const hasDragged = useRef(false);
   const startX = useRef(0);
   const scrollLeftVal = useRef(0);
+  const pauseUntil = useRef(0);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     isDragging.current = true;
@@ -48,6 +49,7 @@ export default function CatalogSection() {
 
   const handleMouseLeave = () => {
     isDragging.current = false;
+    pauseUntil.current = performance.now() + 2000;
     if (scrollRef.current) {
       scrollRef.current.style.cursor = 'grab';
     }
@@ -55,6 +57,7 @@ export default function CatalogSection() {
 
   const handleMouseUp = () => {
     isDragging.current = false;
+    pauseUntil.current = performance.now() + 2000;
     if (scrollRef.current) {
       scrollRef.current.style.cursor = 'grab';
     }
@@ -110,7 +113,8 @@ export default function CatalogSection() {
     const scrollStep = () => {
       if (!el) return;
       
-      if (!isDragging.current) {
+      const now = performance.now();
+      if (!isDragging.current && now > pauseUntil.current) {
         // If user scrolled manually, resync the exactScrollLeft
         if (Math.abs(el.scrollLeft - Math.floor(exactScrollLeft)) > 2) {
           exactScrollLeft = el.scrollLeft;
@@ -284,8 +288,13 @@ export default function CatalogSection() {
                     onMouseDown={handleMouseDown}
                     onMouseUp={handleMouseUp}
                     onMouseMove={handleMouseMove}
+                    onWheel={() => { pauseUntil.current = performance.now() + 2000; }}
                     onTouchStart={() => { isDragging.current = true; }}
-                    onTouchEnd={() => { isDragging.current = false; }}
+                    onTouchEnd={() => { 
+                      isDragging.current = false; 
+                      pauseUntil.current = performance.now() + 2000;
+                    }}
+                    onTouchMove={() => { pauseUntil.current = performance.now() + 2000; }}
                   >
                     {[...allImages, ...allImages].map((item, index) => (
                       <div 
