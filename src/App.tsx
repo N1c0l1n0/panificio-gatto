@@ -4,6 +4,7 @@ import CatalogSection from './components/CatalogSection';
 import ScheduleSection from './components/ScheduleSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import CookieBanner from './components/CookieBanner';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       </main>
 
       <Footer />
+      <CookieBanner />
     </div>
   );
 }

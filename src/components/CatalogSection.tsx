@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { X, Play } from 'lucide-react';
+import { useEffect, useState, useRef } from 'react';
+import { X, Play, ChevronLeft, ChevronRight } from 'lucide-react';
 
 type CatalogItem = {
   id: string;
@@ -26,8 +26,65 @@ export default function CatalogSection() {
   const [categories, setCategories] = useState<CatalogCategory[]>([]);
   const [activeCategoryId, setActiveCategoryId] = useState<string | null>(null);
   const [activeSubcategoryId, setActiveSubcategoryId] = useState<string | null>(null);
-  const [selectedMedia, setSelectedMedia] = useState<{url: string, type: 'image' | 'video'} | null>(null);
+  const [modalState, setModalState] = useState<{items: CatalogItem[], currentIndex: number} | null>(null);
   const [loading, setLoading] = useState(true);
+  
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const isDragging = useRef(false);
+  const hasDragged = useRef(false);
+  const startX = useRef(0);
+  const scrollLeftVal = useRef(0);
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    isDragging.current = true;
+    hasDragged.current = false;
+    if (scrollRef.current) {
+      startX.current = e.pageX - scrollRef.current.offsetLeft;
+      scrollLeftVal.current = scrollRef.current.scrollLeft;
+      scrollRef.current.style.cursor = 'grabbing';
+      scrollRef.current.style.scrollBehavior = 'auto';
+    }
+  };
+
+  const handleMouseLeave = () => {
+    isDragging.current = false;
+    if (scrollRef.current) {
+      scrollRef.current.style.cursor = 'grab';
+    }
+  };
+
+  const handleMouseUp = () => {
+    isDragging.current = false;
+    if (scrollRef.current) {
+      scrollRef.current.style.cursor = 'grab';
+    }
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging.current || !scrollRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX.current) * 1.5;
+    if (Math.abs(walk) > 5) {
+      hasDragged.current = true;
+    }
+    scrollRef.current.scrollLeft = scrollLeftVal.current - walk;
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!modalState) return;
+      if (e.key === 'ArrowRight') {
+        setModalState(prev => prev ? { ...prev, currentIndex: (prev.currentIndex + 1) % prev.items.length } : null);
+      } else if (e.key === 'ArrowLeft') {
+        setModalState(prev => prev ? { ...prev, currentIndex: (prev.currentIndex - 1 + prev.items.length) % prev.items.length } : null);
+      } else if (e.key === 'Escape') {
+        setModalState(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [modalState]);
 
   useEffect(() => {
     fetch('/catalogo.json')
@@ -42,6 +99,39 @@ export default function CatalogSection() {
         setLoading(false);
       });
   }, []);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    let animationId: number;
+    let exactScrollLeft = el.scrollLeft;
+
+    const scrollStep = () => {
+      if (!el) return;
+      
+      if (!isDragging.current) {
+        // If user scrolled manually, resync the exactScrollLeft
+        if (Math.abs(el.scrollLeft - Math.floor(exactScrollLeft)) > 2) {
+          exactScrollLeft = el.scrollLeft;
+        }
+        
+        exactScrollLeft += 0.5; // adjust speed (0.5px per frame = ~30px/sec)
+        el.scrollLeft = Math.floor(exactScrollLeft);
+        
+        // Loop seamlessly
+        if (el.scrollLeft >= el.scrollWidth / 2) {
+          exactScrollLeft -= el.scrollWidth / 2;
+          el.scrollLeft = Math.floor(exactScrollLeft);
+        }
+      }
+      
+      animationId = requestAnimationFrame(scrollStep);
+    };
+
+    animationId = requestAnimationFrame(scrollStep);
+    return () => cancelAnimationFrame(animationId);
+  }, [categories]);
 
   const handleCategoryClick = (id: string) => {
     if (activeCategoryId === id) {
@@ -141,11 +231,11 @@ export default function CatalogSection() {
                   )}
                 </h3>
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
-                  {itemsToDisplay.map((item) => (
+                  {itemsToDisplay.map((item, index) => (
                     <div 
                       key={item.id} 
                       className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-bakery-gold/10 group cursor-pointer relative"
-                      onClick={() => setSelectedMedia({ url: `/${item.image}`, type: item.type || 'image' })}
+                      onClick={() => setModalState({ items: itemsToDisplay, currentIndex: index })}
                     >
                       <div className="relative w-full aspect-square bg-black/5">
                         {item.type === 'video' ? (
@@ -184,20 +274,37 @@ export default function CatalogSection() {
                 </div>
               </div>
             ) : (
-              /* Carousel */
+            /* Carousel */
               allImages.length > 0 && (
-                <div className="overflow-hidden relative w-full py-4 mt-8">
-                  <div className="flex gap-6 animate-scroll">
+                <div className="relative w-full py-4 mt-8">
+                  <div 
+                    ref={scrollRef}
+                    className="flex gap-6 overflow-x-auto scrollbar-hide cursor-grab select-none"
+                    onMouseLeave={handleMouseLeave}
+                    onMouseDown={handleMouseDown}
+                    onMouseUp={handleMouseUp}
+                    onMouseMove={handleMouseMove}
+                    onTouchStart={() => { isDragging.current = true; }}
+                    onTouchEnd={() => { isDragging.current = false; }}
+                  >
                     {[...allImages, ...allImages].map((item, index) => (
                       <div 
                         key={`${item.id}-${index}`} 
-                        className="flex-none w-64 md:w-80 aspect-square rounded-xl overflow-hidden shadow-md border border-bakery-gold/10 cursor-pointer group"
-                        onClick={() => setSelectedMedia({ url: `/${item.image}`, type: 'image' })}
+                        className="flex-none w-64 md:w-80 aspect-square rounded-xl overflow-hidden shadow-md border border-bakery-gold/10 group relative"
+                        onClick={(e) => {
+                          if (hasDragged.current) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            return;
+                          }
+                          setModalState({ items: allImages, currentIndex: index % allImages.length });
+                        }}
                       >
                         <img 
                           src={`/${item.image}`} 
                           alt={item.name} 
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          draggable={false}
+                          className="w-full h-full object-cover transform-gpu will-change-transform group-hover:scale-105 transition-transform duration-500 pointer-events-none"
                         />
                       </div>
                     ))}
@@ -210,36 +317,69 @@ export default function CatalogSection() {
       </div>
 
       {/* Fullscreen Media Modal */}
-      {selectedMedia && (
+      {modalState && modalState.items.length > 0 && (
         <div 
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
-          onClick={() => setSelectedMedia(null)}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-2 sm:p-4 backdrop-blur-sm"
+          onClick={() => setModalState(null)}
         >
           <button 
-            className="absolute top-6 right-6 text-white/80 hover:text-white transition-colors z-50"
-            onClick={(e) => { e.stopPropagation(); setSelectedMedia(null); }}
+            className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/80 hover:text-white transition-colors z-[200] p-2 bg-black/20 hover:bg-black/40 rounded-full"
+            onClick={(e) => { e.stopPropagation(); setModalState(null); }}
           >
-            <X className="h-10 w-10" />
+            <X className="h-8 w-8 sm:h-10 sm:w-10" />
           </button>
+
           <div 
             className="relative max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            {selectedMedia.type === 'video' ? (
+            {modalState.items.length > 1 && (
+              <>
+                <button 
+                  className="absolute left-0 sm:-left-16 top-1/2 -translate-y-1/2 text-white/80 hover:text-white transition-colors z-[200] p-1 sm:p-2 bg-black/20 hover:bg-black/40 rounded-full backdrop-blur-sm"
+                  onClick={(e) => { 
+                    e.stopPropagation(); 
+                    setModalState(prev => prev ? { ...prev, currentIndex: (prev.currentIndex - 1 + prev.items.length) % prev.items.length } : null);
+                  }}
+                >
+                  <ChevronLeft className="h-10 w-10 sm:h-14 sm:w-14" />
+                </button>
+                <button 
+                  className="absolute right-0 sm:-right-16 top-1/2 -translate-y-1/2 text-white/80 hover:text-white transition-colors z-[200] p-1 sm:p-2 bg-black/20 hover:bg-black/40 rounded-full backdrop-blur-sm"
+                  onClick={(e) => { 
+                    e.stopPropagation(); 
+                    setModalState(prev => prev ? { ...prev, currentIndex: (prev.currentIndex + 1) % prev.items.length } : null);
+                  }}
+                >
+                  <ChevronRight className="h-10 w-10 sm:h-14 sm:w-14" />
+                </button>
+              </>
+            )}
+
+            {modalState.items[modalState.currentIndex].type === 'video' ? (
               <video 
-                src={selectedMedia.url} 
-                className="max-w-full max-h-full rounded-md shadow-2xl"
+                key={`video-${modalState.currentIndex}`}
+                src={`/${modalState.items[modalState.currentIndex].image}`} 
+                className="max-w-full max-h-full rounded-md shadow-2xl z-[150]"
                 autoPlay 
-                muted
-                loop
+                controls
                 playsInline
               />
             ) : (
               <img 
-                src={selectedMedia.url} 
+                key={`image-${modalState.currentIndex}`}
+                src={`/${modalState.items[modalState.currentIndex].image}`} 
                 alt="Immagine ingrandita" 
-                className="max-w-full max-h-full object-contain rounded-md shadow-2xl"
+                className="max-w-full max-h-full object-contain rounded-md shadow-2xl animate-in fade-in zoom-in-95 duration-200 z-[150]"
               />
+            )}
+            
+            {modalState.items[modalState.currentIndex].name && (
+              <div className="absolute bottom-4 left-0 right-0 flex justify-center pointer-events-none z-[200]">
+                <span className="bg-black/70 text-white px-5 py-2.5 rounded-full backdrop-blur-md text-sm sm:text-base shadow-lg max-w-[90%] text-center truncate">
+                  {modalState.items[modalState.currentIndex].name}
+                </span>
+              </div>
             )}
           </div>
         </div>

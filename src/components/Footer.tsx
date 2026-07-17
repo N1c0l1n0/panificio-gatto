@@ -44,6 +44,21 @@ export default function Footer() {
 
         <div className="border-t border-bakery-light/10 mt-12 pt-8 text-center text-bakery-light/50 text-sm">
           <p>&copy; {new Date().getFullYear()} Panificio Gatto. Tutti i diritti riservati. | P.IVA 01545680124</p>
+          <div className="mt-4 flex flex-col md:flex-row items-center justify-center gap-4 text-xs">
+            <button 
+              onClick={() => window.dispatchEvent(new CustomEvent('openCookiePreferences'))} 
+              className="hover:text-bakery-gold transition-colors underline"
+            >
+              Impostazioni Cookie
+            </button>
+            <span className="hidden md:inline text-bakery-light/20">|</span>
+            <button 
+              onClick={() => window.dispatchEvent(new CustomEvent('openCookiePreferences'))} 
+              className="hover:text-bakery-gold transition-colors underline"
+            >
+              Privacy & Cookie Policy
+            </button>
+          </div>
         </div>
       </div>
     </footer>
