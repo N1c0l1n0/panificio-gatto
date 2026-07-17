@@ -13,19 +13,22 @@ const DEFAULT_PREFERENCES: CookiePreferences = {
   marketing: false,
 };
 
-export function useCookieConsent() {
-  const [preferences, setPreferences] = useState<CookiePreferences | null>(null);
-
-  useEffect(() => {
+const getInitialPreferences = (): CookiePreferences | null => {
+  if (typeof window !== 'undefined') {
     const stored = localStorage.getItem('cookieConsentData');
     if (stored) {
       try {
-        setPreferences(JSON.parse(stored));
+        return JSON.parse(stored);
       } catch (e) {
         console.error("Error parsing cookie consent", e);
       }
     }
-  }, []);
+  }
+  return null;
+};
+
+export function useCookieConsent() {
+  const [preferences, setPreferences] = useState<CookiePreferences | null>(getInitialPreferences);
 
   const savePreferences = (newPreferences: Partial<CookiePreferences>) => {
     const toSave = { ...DEFAULT_PREFERENCES, ...newPreferences, timestamp: new Date().toISOString() };

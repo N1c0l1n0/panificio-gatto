@@ -313,7 +313,7 @@ export default function CatalogSection() {
                           src={`/${item.image}`} 
                           alt={item.name} 
                           draggable={false}
-                          className="w-full h-full object-cover transform-gpu will-change-transform group-hover:scale-105 transition-transform duration-500 pointer-events-none"
+                          className="w-full h-full object-cover transform-gpu group-hover:scale-105 transition-transform duration-500 pointer-events-none"
                         />
                       </div>
                     ))}
