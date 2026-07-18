@@ -49,13 +49,6 @@ export default function Footer() {
               onClick={() => window.dispatchEvent(new CustomEvent('openCookiePreferences'))} 
               className="hover:text-bakery-gold transition-colors underline"
             >
-              Impostazioni Cookie
-            </button>
-            <span className="hidden md:inline text-bakery-light/20">|</span>
-            <button 
-              onClick={() => window.dispatchEvent(new CustomEvent('openCookiePreferences'))} 
-              className="hover:text-bakery-gold transition-colors underline"
-            >
               Privacy & Cookie Policy
             </button>
           </div>

@@ -2,15 +2,11 @@ import { useState } from 'react';
 
 export interface CookiePreferences {
   necessary: boolean;
-  analytics: boolean;
-  marketing: boolean;
   timestamp?: string;
 }
 
 const DEFAULT_PREFERENCES: CookiePreferences = {
   necessary: true,
-  analytics: false,
-  marketing: false,
 };
 
 const getInitialPreferences = (): CookiePreferences | null => {
@@ -30,8 +26,8 @@ const getInitialPreferences = (): CookiePreferences | null => {
 export function useCookieConsent() {
   const [preferences, setPreferences] = useState<CookiePreferences | null>(getInitialPreferences);
 
-  const savePreferences = (newPreferences: Partial<CookiePreferences>) => {
-    const toSave = { ...DEFAULT_PREFERENCES, ...newPreferences, timestamp: new Date().toISOString() };
+  const accept = () => {
+    const toSave = { ...DEFAULT_PREFERENCES, timestamp: new Date().toISOString() };
     setPreferences(toSave);
     localStorage.setItem('cookieConsentData', JSON.stringify(toSave));
     
@@ -39,8 +35,5 @@ export function useCookieConsent() {
     window.dispatchEvent(new CustomEvent('cookieConsentUpdated', { detail: toSave }));
   };
 
-  const acceptAll = () => savePreferences({ necessary: true, analytics: true, marketing: true });
-  const rejectAll = () => savePreferences({ necessary: true, analytics: false, marketing: false });
-
-  return { preferences, savePreferences, acceptAll, rejectAll };
+  return { preferences, accept };
 }
