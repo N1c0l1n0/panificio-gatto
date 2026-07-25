@@ -371,8 +371,10 @@ export default function CatalogSection() {
                 src={`/${modalState.items[modalState.currentIndex].image}`} 
                 className="max-w-full max-h-full rounded-md shadow-2xl z-[150]"
                 autoPlay 
-                controls
+                muted
+                loop
                 playsInline
+                disablePictureInPicture
               />
             ) : (
               <img 
