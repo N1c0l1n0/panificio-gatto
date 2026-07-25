@@ -712,85 +712,99 @@
           "name": "Biscotteria",
           "items": [
             {
-              "id": "biscotteria_new2_1784290767199_0",
-              "name": "biscotteria 1",
+              "id": "biscotteria_new_1784972986030_0",
+              "name": "Biscotteria 1",
               "image": "images/Nuove immagini/biscotteria/0e1ea88b-1287-4d65-9ec3-d0fa882994b7.JPG",
               "description": "",
               "type": "image"
             },
             {
-              "id": "biscotteria_new2_1784290767199_1",
-              "name": "biscotteria 2",
+              "id": "biscotteria_new_1784972986030_1",
+              "name": "Biscotteria 2",
               "image": "images/Nuove immagini/biscotteria/13bb0859-13b2-44a4-bf5c-e582e31382a1.JPG",
               "description": "",
               "type": "image"
             },
             {
-              "id": "biscotteria_new2_1784290767199_2",
-              "name": "biscotteria 3",
+              "id": "biscotteria_new_1784972986030_2",
+              "name": "Biscotteria 3",
+              "image": "images/Nuove immagini/biscotteria/27ae3a88-749a-41ca-bb40-7a3a692620d9.JPG",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotteria_new_1784972986030_3",
+              "name": "Biscotteria 4",
               "image": "images/Nuove immagini/biscotteria/2c683a9e-888d-421e-a5cc-b5ad01315dd0.JPG",
               "description": "",
               "type": "image"
             },
             {
-              "id": "biscotteria_new2_1784290767199_3",
-              "name": "biscotteria 4",
+              "id": "biscotteria_new_1784972986030_4",
+              "name": "Biscotteria 5",
               "image": "images/Nuove immagini/biscotteria/3b574c55-3f47-4806-97b2-794bc925bdbd.JPG",
               "description": "",
               "type": "image"
             },
             {
-              "id": "biscotteria_new2_1784290767199_4",
-              "name": "biscotteria 5",
+              "id": "biscotteria_new_1784972986030_5",
+              "name": "Biscotteria 6",
               "image": "images/Nuove immagini/biscotteria/3ec3ea4b-9ff0-488f-9ac4-365c54ac708d.JPG",
               "description": "",
               "type": "image"
             },
             {
-              "id": "biscotteria_new2_1784290767199_5",
-              "name": "biscotteria 6",
+              "id": "biscotteria_new_1784972986030_6",
+              "name": "Biscotteria 7",
               "image": "images/Nuove immagini/biscotteria/4934fd71-e40b-4940-80e2-c0dd049b2ff2.JPG",
               "description": "",
               "type": "image"
             },
             {
-              "id": "biscotteria_new2_1784290767199_6",
-              "name": "biscotteria 7",
+              "id": "biscotteria_new_1784972986030_7",
+              "name": "Biscotteria 8",
               "image": "images/Nuove immagini/biscotteria/57e47727-b668-4bb5-81c7-0f1afb11e4a4.JPG",
               "description": "",
               "type": "image"
             },
             {
-              "id": "biscotteria_new2_1784290767199_7",
-              "name": "biscotteria 8",
-              "image": "images/Nuove immagini/biscotteria/5b13f6d9-9bc5-456f-83a4-a73357173aa9.JPG",
+              "id": "biscotteria_new_1784972986030_8",
+              "name": "Biscotteria 9",
+              "image": "images/Nuove immagini/biscotteria/5b13f6d9-9bc5-456f-83a4-a73357173aa9.JPG?v=1784973353",
               "description": "",
               "type": "image"
             },
             {
-              "id": "biscotteria_new2_1784290767199_8",
-              "name": "biscotteria 9",
+              "id": "biscotteria_new_1784972986030_9",
+              "name": "Biscotteria 10",
               "image": "images/Nuove immagini/biscotteria/7f761969-a34c-41cd-b1b4-d43dd122ca19.JPG",
               "description": "",
               "type": "image"
             },
             {
-              "id": "biscotteria_new2_1784290767199_9",
-              "name": "biscotteria 10",
+              "id": "biscotteria_new_1784972986030_10",
+              "name": "Biscotteria 11",
               "image": "images/Nuove immagini/biscotteria/9145ca84-ce79-49eb-b02a-bb7643c92f92.JPG",
               "description": "",
               "type": "image"
             },
             {
-              "id": "biscotteria_new2_1784290767199_10",
-              "name": "biscotteria 11",
+              "id": "biscotteria_new_1784972986030_11",
+              "name": "Biscotteria 12",
               "image": "images/Nuove immagini/biscotteria/998d1caa-a562-4b0f-a11a-0dec58996f09.JPG",
               "description": "",
               "type": "image"
             },
             {
-              "id": "biscotteria_new2_1784290767199_11",
-              "name": "biscotteria 12",
+              "id": "biscotteria_new_1784972986030_12",
+              "name": "Biscotteria 13",
+              "image": "images/Nuove immagini/biscotteria/bb75eca5-a059-4b08-8f06-74424ea2256e.JPG",
+              "description": "",
+              "type": "image"
+            },
+            {
+              "id": "biscotteria_new_1784972986030_13",
+              "name": "Biscotteria 14",
               "image": "images/Nuove immagini/biscotteria/da848403-b77b-4d28-be89-338a84e03f92.JPG",
               "description": "",
               "type": "image"
@@ -1253,7 +1267,7 @@
         },
         {
           "id": "personalizzati",
-          "name": "Personalizzati",
+          "name": "Biscotti personalizzati",
           "items": [
             {
               "id": "biscotti_personalizzati_0",

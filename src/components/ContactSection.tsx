@@ -30,17 +30,22 @@ export default function ContactSection() {
               <div className="flex-1">
                 <h3 className="font-serif font-bold text-xl text-bakery-dark mb-3">Orari di Apertura</h3>
                 <ul className="text-bakery-dark/80 space-y-2 text-sm sm:text-base">
-                  <li className="flex justify-between border-b border-bakery-gold/10 pb-1">
-                    <span className="font-medium">Lunedì e Sabato</span>
-                    <span>06:30 - 13:00</span>
+                  <li className="flex flex-col sm:flex-row sm:justify-between border-b border-bakery-gold/10 pb-2 sm:pb-1 gap-1 sm:gap-0">
+                    <span className="font-medium text-bakery-dark">Lunedì e Sabato</span>
+                    <span className="text-left sm:text-right text-bakery-dark/80">06:30 - 13:00</span>
                   </li>
-                  <li className="flex justify-between border-b border-bakery-gold/10 pb-1">
-                    <span className="font-medium">Martedì - Venerdì</span>
-                    <span className="text-right">06:30 - 13:00<br/>16:00 - 19:00</span>
+                  <li className="flex flex-col sm:flex-row sm:justify-between border-b border-bakery-gold/10 pb-2 sm:pb-1 gap-1 sm:gap-0">
+                    <span className="font-medium text-bakery-dark">Martedì - Venerdì</span>
+                    <span className="text-left sm:text-right text-bakery-dark/80">
+                      06:30 - 13:00
+                      <span className="sm:hidden"> / </span>
+                      <br className="hidden sm:block"/>
+                      16:00 - 19:00
+                    </span>
                   </li>
-                  <li className="flex justify-between pb-1 text-bakery-accent/80">
+                  <li className="flex flex-col sm:flex-row sm:justify-between pb-1 text-bakery-accent/80 gap-1 sm:gap-0">
                     <span className="font-medium">Domenica</span>
-                    <span>Chiuso</span>
+                    <span className="text-left sm:text-right">Chiuso</span>
                   </li>
                 </ul>
               </div>

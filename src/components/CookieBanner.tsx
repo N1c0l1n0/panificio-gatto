@@ -61,7 +61,7 @@ export default function CookieBanner() {
           <div className="relative bg-[#faf8f5] text-bakery-dark w-full max-w-3xl rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden flex flex-col max-h-[90vh] sm:max-h-[85vh] animate-in zoom-in-95 slide-in-from-bottom-4 duration-400 ease-out border border-white/60">
             
             {/* Header */}
-            <div className="bg-white px-6 py-5 sm:px-8 sm:py-6 border-b border-bakery-gold/10 flex items-center justify-between sticky top-0 z-10">
+            <div className="bg-white px-6 py-5 sm:px-8 sm:py-6 border-b border-bakery-gold/10 flex items-center justify-between shrink-0 z-10">
               <div className="flex items-center gap-3">
                 <div className="bg-bakery-gold/10 p-2.5 rounded-xl">
                   <FileText className="w-6 h-6 text-bakery-accent" />
@@ -80,7 +80,7 @@ export default function CookieBanner() {
             </div>
             
             {/* Body */}
-            <div className="p-6 sm:p-8 bg-gradient-to-b from-white/50 to-transparent">
+            <div className="p-6 sm:p-8 bg-gradient-to-b from-white/50 to-transparent overflow-y-auto flex-1">
               
               <div className="bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-bakery-gold/10 flex flex-col gap-5">
                 
@@ -110,7 +110,7 @@ export default function CookieBanner() {
             </div>
             
             {/* Footer */}
-            <div className="px-4 sm:px-6 pt-4 pb-6 sm:pt-5 sm:pb-7 bg-white border-t border-bakery-gold/10 flex justify-end">
+            <div className="px-4 sm:px-6 pt-4 pb-6 sm:pt-5 sm:pb-7 bg-white border-t border-bakery-gold/10 flex justify-end shrink-0">
               <button
                 onClick={() => setModalView('none')}
                 className="px-8 py-2.5 bg-bakery-dark text-white hover:bg-black transition-all active:scale-95 font-medium rounded-xl text-sm shadow-md"
